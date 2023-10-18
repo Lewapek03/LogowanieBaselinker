@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.9.13 on win32)" generated="20231018 17:17:41.678" rpa="true" schemaversion="4">
+<suite id="s1" name="RoboticAutomation" source="C:\Users\Paweł\PycharmProjects\RoboticAutomation">
+<suite id="s1-s1" name="Tests" source="C:\Users\Paweł\PycharmProjects\RoboticAutomation\Tests">
+<suite id="s1-s1-s1" name="Google" source="C:\Users\Paweł\PycharmProjects\RoboticAutomation\Tests\Google">
+<suite id="s1-s1-s1-s1" name="FunctionalTestSuite" source="C:\Users\Paweł\PycharmProjects\RoboticAutomation\Tests\Google\FunctionalTestSuite">
+<suite id="s1-s1-s1-s1-s1" name="GoogleSearch" source="C:\Users\Paweł\PycharmProjects\RoboticAutomation\Tests\Google\FunctionalTestSuite\GoogleSearch.robot">
+<test id="s1-s1-s1-s1-s1-t1" name="Pierwszty" line="4">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://rpachallengeocr.azurewebsites.net/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231018 17:17:41.884" level="INFO">Opening browser 'chrome' to base url 'https://rpachallengeocr.azurewebsites.net/'.</msg>
+<status status="PASS" starttime="20231018 17:17:41.883" endtime="20231018 17:17:43.486"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231018 17:17:48.488" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20231018 17:17:43.487" endtime="20231018 17:17:48.488"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//*[@id="start"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231018 17:17:48.489" level="INFO">Clicking button '//*[@id="start"]'.</msg>
+<status status="PASS" starttime="20231018 17:17:48.488" endtime="20231018 17:17:48.535"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231018 17:17:50.543" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20231018 17:17:48.535" endtime="20231018 17:17:50.543"/>
+</kw>
+<status status="PASS" starttime="20231018 17:17:41.883" endtime="20231018 17:17:50.544"/>
+</test>
+<status status="PASS" starttime="20231018 17:17:41.710" endtime="20231018 17:17:50.546"/>
+</suite>
+<status status="PASS" starttime="20231018 17:17:41.708" endtime="20231018 17:17:50.547"/>
+</suite>
+<status status="PASS" starttime="20231018 17:17:41.706" endtime="20231018 17:17:50.548"/>
+</suite>
+<status status="PASS" starttime="20231018 17:17:41.705" endtime="20231018 17:17:50.549"/>
+</suite>
+<status status="PASS" starttime="20231018 17:17:41.684" endtime="20231018 17:17:50.551"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tasks</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="RoboticAutomation">RoboticAutomation</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Tests">RoboticAutomation.Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Google">RoboticAutomation.Tests.Google</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1" name="FunctionalTestSuite">RoboticAutomation.Tests.Google.FunctionalTestSuite</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1-s1" name="GoogleSearch">RoboticAutomation.Tests.Google.FunctionalTestSuite.GoogleSearch</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

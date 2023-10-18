@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.9.13 on win32)" generated="20231017 22:05:04.735" rpa="false" schemaversion="4">
+<suite id="s1" name="TworzeniePowiazan" source="C:\Users\Paweł\PycharmProjects\RoboticAutomation\Tests\TworzeniePowiazan\TworzeniePowiazan.robot">
+<test id="s1-t1" name="Tworzenie Powiazan" line="32">
+<kw name="Open And Login Baselinker">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${urlLoginBaseliner}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231017 22:05:04.957" level="INFO">Opening browser 'Chrome' to base url 'https://login.baselinker.com/'.</msg>
+<status status="PASS" starttime="20231017 22:05:04.957" endtime="20231017 22:05:07.580"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20231017 22:05:07.580" endtime="20231017 22:05:07.696"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="loginField"]</arg>
+<arg>${loginBaselinker}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231017 22:05:07.697" level="INFO">Typing text 'AutomatUipath' into text field '//*[@id="loginField"]'.</msg>
+<status status="PASS" starttime="20231017 22:05:07.696" endtime="20231017 22:05:07.763"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>//*[@id="passwordField"]</arg>
+<arg>Lewapek200!</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20231017 22:05:07.764" level="INFO">Typing password into text field '//*[@id="passwordField"]'.</msg>
+<msg timestamp="20231017 22:05:07.791" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20231017 22:05:07.834" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20231017 22:05:07.763" endtime="20231017 22:05:07.834"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="signinButton"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231017 22:05:07.834" level="INFO">Clicking element '//*[@id="signinButton"]'.</msg>
+<status status="PASS" starttime="20231017 22:05:07.834" endtime="20231017 22:05:07.881"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//*[@id="login-name"]</arg>
+<arg>25s</arg>
+<arg>${loginBaselinker}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20231017 22:05:07.881" endtime="20231017 22:05:11.069"/>
+</kw>
+<status status="PASS" starttime="20231017 22:05:04.957" endtime="20231017 22:05:11.069"/>
+</kw>
+<kw name="Check Is Have Connection To Create">
+<var>${elementVisible}</var>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://panel-e.baselinker.com/inventory_products.php</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20231017 22:05:11.071" level="INFO">Opening url 'https://panel-e.baselinker.com/inventory_products.php'</msg>
+<status status="PASS" starttime="20231017 22:05:11.071" endtime="20231017 22:05:13.488"/>
+</kw>
+<kw name="Click Element With Timeout">
+<arg>//*[@id="table_inventory_products_container-filters-btn"]</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20231017 22:05:13.490" endtime="20231017 22:05:13.544"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231017 22:05:13.545" level="INFO">Clicking element '//*[@id="table_inventory_products_container-filters-btn"]'.</msg>
+<status status="PASS" starttime="20231017 22:05:13.544" endtime="20231017 22:05:13.606"/>
+</kw>
+<status status="PASS" starttime="20231017 22:05:13.488" endtime="20231017 22:05:13.606"/>
+</kw>
+<kw name="Click Element With Timeout">
+<arg>//*[@id="table_inventory_products_containerViewsDropdown"]</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20231017 22:05:13.607" endtime="20231017 22:05:13.630"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231017 22:05:13.631" level="INFO">Clicking element '//*[@id="table_inventory_products_containerViewsDropdown"]'.</msg>
+<status status="PASS" starttime="20231017 22:05:13.630" endtime="20231017 22:05:13.668"/>
+</kw>
+<status status="PASS" starttime="20231017 22:05:13.606" endtime="20231017 22:05:13.668"/>
+</kw>
+<kw name="Click Element With Timeout">
+<arg>//*[@id="table_inventory_products_container_view_1374"]/a</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${timeout}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20231017 22:05:13.668" endtime="20231017 22:05:13.899"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231017 22:05:13.899" level="INFO">Clicking element '//*[@id="table_inventory_products_container_view_1374"]/a'.</msg>
+<status status="PASS" starttime="20231017 22:05:13.899" endtime="20231017 22:05:13.990"/>
+</kw>
+<status status="PASS" starttime="20231017 22:05:13.668" endtime="20231017 22:05:13.990"/>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${elementVisible}</var>
+<arg>Page Should Contain Element</arg>
+<arg>//*[@id="table_inventory_products_containerDropdownCheck"]</arg>
+<arg>15s</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>//*[@id="table_inventory_products_containerDropdownCheck"]</arg>
+<arg>15s</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20231017 22:05:14.002" level="INFO">Current page contains element '//*[@id="table_inventory_products_containerDropdownCheck"]'.</msg>
+<status status="PASS" starttime="20231017 22:05:13.991" endtime="20231017 22:05:14.002"/>
+</kw>
+<msg timestamp="20231017 22:05:14.002" level="INFO">${elementVisible} = True</msg>
+<status status="PASS" starttime="20231017 22:05:13.990" endtime="20231017 22:05:14.002"/>
+</kw>
+<return>
+<value>${elementVisible}</value>
+<status status="PASS" starttime="20231017 22:05:14.002" endtime="20231017 22:05:14.002"/>
+</return>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${elementVisible}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20231017 22:05:14.002" endtime="20231017 22:05:14.002"/>
+</kw>
+<msg timestamp="20231017 22:05:14.002" level="INFO">${elementVisible} = True</msg>
+<status status="PASS" starttime="20231017 22:05:11.071" endtime="20231017 22:05:14.002"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>${elementVisible}</arg>
+<arg>Click Element</arg>
+<arg>//*[@id="inventoryDropdownOperations"]</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="inventoryDropdownOperations"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231017 22:05:14.003" level="INFO">Clicking element '//*[@id="inventoryDropdownOperations"]'.</msg>
+<msg timestamp="20231017 22:05:15.232" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-18.png"&gt;&lt;img src="selenium-screenshot-18.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20231017 22:05:15.232" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button id="inventoryDropdownOperations" class="btn-reset list-item-mobile btn-desktop button-xs d-block d-md-inblock collapse-btn dropdown-toggle" data-target-duplicated="#inventoryDropdownOperationsMenu" type="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown"&gt;...&lt;/button&gt; is not clickable at point (521, 537). Other element would receive the click: &lt;div class="text-center flex-center"&gt;...&lt;/div&gt;
+  (Session info: chrome=118.0.5993.71)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6C1F48EF2+54786]
+	(No symbol) [0x00007FF6C1EB5612]
+	(No symbol) [0x00007FF6C1D6A64B]
+	(No symbol) [0x00007FF6C1DB1A6B]
+	(No symbol) [0x00007FF6C1DAFE39]
+	(No symbol) [0x00007FF6C1DADC08]
+	(No symbol) [0x00007FF6C1DACCC3]
+	(No symbol) [0x00007FF6C1DA29CF]
+	(No symbol) [0x00007FF6C1DCBE6A]
+	(No symbol) [0x00007FF6C1DA22E6]
+	(No symbol) [0x00007FF6C1DCC080]
+	(No symbol) [0x00007FF6C1DE4D02]
+	(No symbol) [0x00007FF6C1DCBC43]
+	(No symbol) [0x00007FF6C1DA0941]
+	(No symbol) [0x00007FF6C1DA1B84]
+	GetHandleVerifier [0x00007FF6C2297F52+3524194]
+	GetHandleVerifier [0x00007FF6C22ED800+3874576]
+	GetHandleVerifier [0x00007FF6C22E5D7F+3843215]
+	GetHandleVerifier [0x00007FF6C1FE5086+694166]
+	(No symbol) [0x00007FF6C1EC0A88]
+	(No symbol) [0x00007FF6C1EBCA94]
+	(No symbol) [0x00007FF6C1EBCBC2]
+	(No symbol) [0x00007FF6C1EACC83]
+	BaseThreadInitThunk [0x00007FF931437344+20]
+	RtlUserThreadStart [0x00007FF9322626B1+33]
+</msg>
+<status status="FAIL" starttime="20231017 22:05:14.003" endtime="20231017 22:05:15.234"/>
+</kw>
+<status status="FAIL" starttime="20231017 22:05:14.003" endtime="20231017 22:05:15.234"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>15s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20231017 22:05:15.234" endtime="20231017 22:05:15.234"/>
+</kw>
+<doc>Tworzenie Powiazan</doc>
+<status status="FAIL" starttime="20231017 22:05:04.956" endtime="20231017 22:05:15.234">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button id="inventoryDropdownOperations" class="btn-reset list-item-mobile btn-desktop button-xs d-block d-md-inblock collapse-btn dropdown-toggle" data-target-duplicated="#inventoryDropdownOperationsMenu" type="button" aria-haspopup="true" aria-expanded="false" data-toggle="dropdown"&gt;...&lt;/button&gt; is not clickable at point (521, 537). Other element would receive the click: &lt;div class="text-center flex-center"&gt;...&lt;/div&gt;
+  (Session info: chrome=118.0.5993.71)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6C1F48EF2+54786]
+	(No symbol) [0x00007FF6C1EB5612]
+	(No symbol) [0x00007FF6C1D6A64B]
+	(No symbol) [0x00007FF6C1DB1A6B]
+	(No symbol) [0x00007FF6C1DAFE39]
+	(No symbol) [0x00007FF6C1DADC08]
+	(No symbol) [0x00007FF6C1DACCC3]
+	(No symbol) [0x00007FF6C1DA29CF]
+	(No symbol) [0x00007FF6C1DCBE6A]
+	(No symbol) [0x00007FF6C1DA22E6]
+	(No symbol) [0x00007FF6C1DCC080]
+	(No symbol) [0x00007FF6C1DE4D02]
+	(No symbol) [0x00007FF6C1DCBC43]
+	(No symbol) [0x00007FF6C1DA0941]
+	(No symbol) [0x00007FF6C1DA1B84]
+	GetHandleVerifier [0x00007FF6C2297F52+3524194]
+	GetHandleVerifier [0x00007FF6C22ED800+3874576]
+	GetHandleVerifier [0x00007FF6C22E5D7F+3843215]
+	GetHandleVerifier [0x00007FF6C1FE5086+694166]
+	(No symbol) [0x00007FF6C1EC0A88]
+	(No symbol) [0x00007FF6C1EBCA94]
+	(No symbol) [0x00007FF6C1EBCBC2]
+	(No symbol) [0x00007FF6C1EACC83]
+	BaseThreadInitThunk [0x00007FF931437344+20]
+	RtlUserThreadStart [0x00007FF9322626B1+33]
+</status>
+</test>
+<status status="FAIL" starttime="20231017 22:05:04.736" endtime="20231017 22:05:15.236"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="TworzeniePowiazan">TworzeniePowiazan</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
